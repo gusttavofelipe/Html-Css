@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>Oitavo Exercicio: Formatações de texto</title>
+</head>
+<body> 
+     <style>
+     
+    mark {
+        background-color: dodgerblue;
+        }
+     </style>
+    <!-- acima esta um exemplo de seletor que utilizamos no Css;
+         O seletor é a parte da regra CSS que está antes do sinal “{“ (chave de abertura);
+         Nesse caso o seletor detecta todas os caracteres que estão dentro da tag "mark" e com o atributo de estilização do Css "background-color" faz com que os memos tenham a mesma cor-->
+
+
+
+
+    <h1>Principais Formatações</h1>
+
+    <h2>Negrito/Destaque</h2>
+    <p>Nesta frase temos um <b>termo em negrito</b> usando a tag B (não semântica)</p>
+    <!--a tag "b" apresenta apenas uma formatação, apenas apresenta o texto em negrito, sem significado, sem sentido -->
+
+    <p>Nesta frase temos um <strong>termo em destaque</strong> usanado a tag STRONG (Semântica)</p>
+    <!--a tag "strong" além de apresentar formatação em negrito da um significado, da um sentido a ela, como a adição de um endereço, como pode ser observado no exercicio anterior (Ex007: semântica)-->
+
+    <h2>Itálico/Ênfase</h2>
+    <p>Nesta frase temos um <i>termo em Ênfase</i> usando a tag I (Não semântica)</p>
+     <!--a tag "i" apenas apresenta formatação, apenas apresenta o texto em italico, sem significado, sem sentido, -->
+
+    <p>Nesta frase temos um <em>termo em Ênfase</em> usando a tag EM (Semântica)</p>
+    <!--a tag "em" apresenta formatação e significado, sentido-->
+
+    <!-- Para formatação: é utilizado o Css;
+         Para dar sentido, significado: é utilizado HTML;
+         O melhor a se fazer é usar esse esquema-->
+
+         <h2> Texto Marcado</h2>
+
+         <p>Nesta frase de exemplo ha uma <mark style="background-color: darkslategray;">parte marcada</mark> usanado a tag MARK</p>
+         <!--a "tag mark" serve para fazer uma marcação no texto selecionado;
+             com a adição do "style="background-color", que é Css pode-se mudar a cor da marcação, entre outras coisas que são possiveis fazer com "style"-->
+        
+        <p>Nesta frase de exemplo ha uma <mark>parte marcada</mark> usanado a tag MARK</p>
+        <!-- a cor da primeira marcação utilizando "style" não é herdada por um segundo ou qualquer outro "mark", apenas com a utilização de um seletor-->
+
+
+        <h2>Texto grande e pequeno</h2>
+        <p>para fazer com que um texto, frase, caractere etc fique maior, utilize CSS</p>
+        <p>uma parte deste texto <small>esta pequena</small></p>
+        <!--a tag smaal faz com que tudo que estiver dentro fique pequeno;
+            Tambem podemos deixar textos pequenos usando Css, para estilização é o mais recomendado e ideal-->
+
+        <h2>Texto deletado</h2>
+        <p>podemos marcar <del>um texto como excluido</del> para indicar que ele deve ser lido, mas não considerado</p>
+
+        <p>podemos marcar um texto como inserido <ins>para dar uma Ênfase e indicar que ele foi adicionado depois</ins></p>
+
+
+    <h2>texto sobrescrito</h2>
+    <p>para inserir coisas do tipo x<sup>20</sup>+25</p>
+    <!--a tag "<sup> faz com que um caractere tenha uma elevação e uma diminuição em relação as outras. Os numeros elevados são um otimo exemplo disso-->
+
+
+    <h2>texto subescrito</h2>
+    <p>para inserir coisas dontipo h<sub>2</sub>0</p>
+    <!--a tag "<sub> faz com que um caractere tenha uma declinação e uma diminuição em relação as outras. a junção dos elementos h2o escritos no paragrafo acima são um bom exemplo-->
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

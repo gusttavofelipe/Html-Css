@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>Decimo primeiro exercicio</title>
+</head>
+<body>
+    <h1>Mídias</h1>
+    <h2>Imagens dinâmicas</h2>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou aumente e diminua e tamanho do seu navegador</p>
+
+    <picture> 
+            <source media="(max-width: 720px)" srcset="Imagens/p-imagem.png" type="image/png">
+            <source media="(max-width: 1060px)" srcset="Imagens/m-imagem.png" type="image/png">
+            <img src="Imagens/g-imagem.png" alt="imagem flexivel g">
+    </picture>
+        <!--a tag <PICTURE> permite que sejam adicionados varias tags "SOURCE" que possibilitam a adição de imagens que são carregadas de acordo com o  tamanho da tela;
+        a tag que permite adicionar mais imagens é especificamente "<SOURCE:MEDIA:TYPE>";
+        o valor "WIDTH" do atributo "MEDIA" vem acompanhado (sempre antes do traço (-)) de "MAX" ou "MIN", define as configurações de exibição, mudam de acordo com o valor escolhido;
+        com o valor e parametro "MEDIA="(MAX-WIDTH: )" inseridos, as imagens apresentadas seguem a ordem de baixo para cima, 
+        (assim as imagens devem ser colocadas da maior para a menor);
+
+        com o valor e parametro "MEDIA="(MIN-WIDTH: )" inseridos, as imagens apresentadas tambem seguem a ordem de baixo para cima;
+        (o que muda é a ordem de apresentação das imagens)
+        
+        o atributo "SRCSET" é o responsavel por apresentar a outra imagem escolhida caso a imagem principal e/ou imagem do "SRCSET" anterior passe do tamanho estipulado ou seja menor, respectivamente em "MEDIA="(MAX-WIDTH: )
+        podem ser adicionadas quantas imagens quiser usando os SRCSET's   
+        no atributo <TYPE=""> que é adicionado automaticamente com o valor "IMGE/" apenas coloque o formato da imagem (caso não venha pré selecionado, esvcreva você mesmo)-->
+
+
+        <h2>Inserindo Áudio</h2>
+                <!--adicione a tag "<AUDIO>' e apague tudo inserido junto a tag alem de "<AUDIO> e "</AUDIO>", em seguida adicione "SOURCE:SRC", como mostrado abaixo"-->
+
+        <audio preload="none" autoplay controls loop>
+                <!--o tributo "PRELOAD" especifica se e como o autor pensa que o arquivo de áudio devem ser carregados quando a página é carregada usando os valores:
+
+                "NONE" (O autor pensa que o navegador não deve carregar o arquivo de áudio quando a página é carregada, apenas quando apertado o play
+
+                "METADATA" (O autor pensa que o navegador deve carregar apenas metadados quando a página é carregada)
+                
+                "AUTO" (O autor pensa que o navegador deve carregar todo o arquivo de áudio quando a página é carregada)--> 
+                
+            <!--o atributo "AUTOPLAY" Define que o audio começará a ser tocado assim que ele estiver pronto.-->
+            <!--o atributo "CONTROLS" faz com que os controles do audio sejam mostrados.-->
+            <!--o atributo "LOOP" define que o audio começará a ser tocado novamente quando terminar.-->
+            
+
+            <source src="Midia/guanacast-33.mp3" type="audio/mpeg">
+            <source src="Midia/guanacast-33.ogg" type="audio/">
+            <source src="Midia/guanacast-33.wav" type="audio/">
+
+
+            <!--a tag "<SOURCE> com tributo "SRC="" " (onde é colocado o caminho e o nome do arquivo), e "TYPE="" " (onde, nesse caso sera sempre tipo: "audio/+ formato do audio" ") insere os arquivos de audio em ordem de cima para baixo, caso o navegagor não tenha compatibilidade com algum formato, outros formatos serão testados em ordem caso o pricipal falhe, ou o secundario ou terceario etc, 
+
+             alguns formatos podem não serem escritos em codigo da mesma maneira, como "mp3" que passa a ser "mpeg" 
+             o formato "WAV" não é recomendado por ser muito pesado-->
+       </audio>
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decimo segundo exercicio</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu proprio servidor</p>
+
+    <video width="560" controls autoplay loop poster="imagens/thumbnail.png" >
+                    <source src="midia/video-1.m4v" type="video/m4v">
+                    <source src="midia/video-1.webm" type="video/webm">
+                    <source src="midia/video-1.mp4" type="video/mp4">
+                    <source src="midia/video-1.ogv" type="video/ogv">
+
+    <p>Seu navegador não compatibilidade com reprodução de vídeos</p>
+    <!--(Caso nenhum formato inserido seja compativel com navegador, será exibida essa mensagem)-->
+   </video>                    
+   
+
+       <!--adicione a tag "<VIDEO>' e apague tudo inserido junto a tag alem de "<VIDEO> e "</VIDEO>", em seguida adicione "SOURCE:SRC", como mostrado acima"-->
+       <!--podem ser inseridos quantos "SOURCE,s" forem necessarios-->
+
+       <!--a ordem tem muia impotancia, os videos serão carregados na ordem de cima para baixo-->
+       <!--no atributo "TYPE" deve ser especificado o tipo do arquivo (no caso,"video") e o formato-->
+       <!--o atributo "WIDTH" define a largura da imagem-->
+       <!--o atributo "CONTROLS" exibe os controles do video-->
+       <!--o atributo "LOOP" define que o audio começará a ser tocado novamente quando terminar.-->
+
+    <h1>Inserindo vídeos externos</h1>
+    <p>Este vídeo está hospedado no YouTube</p>
+    <!--apenas incorpore o vídeo e cole-->
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HicXSPPNiEI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <p>Este vídeo está hospedado no Vimeo</p>
+    <!--apenas incorpore o vídeo e cole, e se quiser faça modificaões no proprio vimeo-->
+
+    <iframe src="https://player.vimeo.com/video/163267024?h=5f7296e889&color=ff9933&title=0&portrait=0"
+     width="560" height="315"
+    frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+    
+
+
+   
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigesimo primeiro exercicio: groupin tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        header > h1{
+            background-color: lightgray;
+            text-align: center;
+            border: 1px solid black;
+            padding: 10px;
+            color: rgb(85, 0, 0);
+        }
+
+        header > nav{
+            text-align: center;
+
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            /*BORDER RADIUS DEFINE UM ARREDONDAMENTO DAS BORDAS NA ORDEM ABAIXO OU COLOCANDO UM VALOR UNITARIO OU DUPLO
+              border-top-left-radius: 
+              border-top-right-radius: 
+              border-bottom-right-radius: 
+              border-bottom-left-radius:
+              PODEM SER UTILIZADAS OUTRAS UNIDADES DE MEDIDA */
+
+              box-shadow: 5px 3px 7px rgba(0, 0, 0, 0.479);
+            /* BOX SHADOW ADICIONA SOMBRA A CAIXA
+              1° deslocamneto horizontal
+              2° deslocamento vertical
+              3° espalhamento
+              4° cor da sombra
+              PODEM SER UTILIZADAS OUTRAS UNIDADES DE MEDIDA*/
+        }
+
+        footer{
+            background-color: white;
+            color: rgb(85, 0, 0);
+            padding-left: 10px;
+            margin: 10px;
+            border: 1px solid black;
+            font-weight: bolder;
+        }
+
+        article{
+            padding: 5px;            
+            background-color: lightgray;
+
+        }
+
+        article > aside{
+            background-color: white;
+            border: 1px solid black;
+            color: rgb(44, 1, 1);
+        }
+
+        article > h3{
+            color: rgb(85, 0, 0);
+        }
+
+        aside  p{
+            color: rgb(85, 0, 0);
+            font-weight: bolder;
+            padding: 1px 0px 1px 10px;
+        }
+
+        nav{
+            background-color: white;
+            padding: 7px;
+            border: 1px solid black;
+            box-shadow: 5px 3px 7px rgba(0, 0, 0, 0.479);
+            /* BOX SHADOW ADICIONA SOMBRA A CAIXA
+              1° deslocamneto horizontal
+              2° deslocamento vertical
+              3° espalhamento
+              4° cor da sombra
+              PODEM SER UTILIZADAS OUTRAS UNIDADES DE MEDIDA*/
+        }
+
+        nav > a{
+            color: darkred;
+            text-decoration: none;
+            margin-right: 30px;
+            font-weight: bolder;
+            
+       }
+       nav > a:hover{
+           text-decoration: underline;
+       }
+       
+       #assuntos{
+           border: 1px solid black;
+           padding-left: 10px;
+           color: rgb(85, 0, 0);
+       }
+       
+
+        
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Titulo  de Exemplo</h1>
+        <nav>
+            <a href="https://www.youtube.com" target="_self" rel="next">alguma coisa</a>
+            <a href="https://www.youtube.com" target="_self" rel="next">alguma outra coisa</a>
+            <a href="https://www.youtube.com" target="_self" rel="next">alguma coisa</a>
+            <a href="https://www.youtube.com" target="_self" rel="next">alguma outra coisa</a>
+            <a href="https://www.youtube.com" target="_self" rel="next">alguma coisa</a>
+            <a href="https://www.youtube.com" target="_self" rel="next">alguma outra coisa</a>
+            <a href="https://www.youtube.com" target="_self" rel="next">alguma coisa</a>
+            <a href="https://www.youtube.com" target="_self" rel="next">alguma outra coisa</a>
+            
+        </nav>
+        <!--a tg NAV define uma área que possui os links de navegação pela
+        estrutura de páginas que vão compor o website. Um
+        <nav> pode estar dentro de um <header>-->
+
+
+    </header>
+    <!--a tag HEADER cria áreas relativas a cabeçalhos. Pode ser o cabeçalho principal de um site ou até
+     mesmo o cabeçalho de uma seção ou artigo. Normalmente inclui títulos <h1> - <h6>
+     e subtítulos. Podem também conter menus de navegação.-->
+
+    <main>
+
+          <section id="assuntos">
+              <h2>Este é o local da section</h2>
+
+          </section>
+
+          <section id="noticias">
+
+          <article>
+              <h3>Assunto da section </h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ad sequi quibusdam voluptates tenetur itaque quasi illum nemo cupiditate? Enim quibusdam sequi perspiciatis <br> magni repellendus facilis inventore sunt hic harum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia in id harum necessitatibus! Error necessitatibus quisquam recusandae qui ad, aperiam doloremque rerum minus repellendus magni odio magnam nesciunt, dolores facere.</p>
+          <aside>
+              <p>Este é o local de umas das sections</p>
+          </aside>
+          <!--A tag aside define um bloco de conteúdo que faz referência ao conteudo principal que o cerca.
+           Normalmente ela fica na lateral e pode conter assuntos relacionados, conteudo publicitario, informações contextuais, etc.-->
+
+          </article>
+
+          <article>
+
+          </article>
+          <!-- a tag article especifica um conteúdo independente e autônomo-->
+
+          </section>
+          <!--A tag section é utilizada para marcar as seções de conteúdo de uma página.
+           Com Esse elemento agrupamos de forma lógica nosso conteúdo, separando a informação em áreas diferentes-->
+
+    </main>
+    <!--a tag MAIN É um agrupador usado para delimitar o conteúdo
+     principal do nosso site. Normalmente concentra as
+     seções, artigos e conteúdos periféricos-->
+
+    <footer>
+        <p>Este é o local do Footer</p>
+    </footer>
+    <!--a tag ria FOOTER um rodapé para o site inteiro, seção ou artigo. É um conteúdo que não faz parte
+     diretamente do conteúdo nem é um conteúdo periférico, mas possui informações sobre autoria do conteúdo, links adicionais, mapa
+     do site, documentos relacionados etc-->
+    
+</body>
+</html>

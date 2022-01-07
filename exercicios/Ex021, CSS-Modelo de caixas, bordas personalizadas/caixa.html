@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigesimo primeiro exercicio</title>
+    
+    <style>
+        h1{ /*é possivel mudar um box level para iline level com a "DISPLAY: ILINE"*/
+            background-color: lightgray ;
+            height: 300px;
+            width: 300px;
+            /*height e width são as medidas do atributo "box-size" (tamanho da caixa)*/
+            
+
+            border-width: 10px; /*largura da borda*/
+            border-style: solid; /*estilo da borda*/
+            border-color: darkgray; /*cor da borda*/
+
+            /*PODEMOS SIMPLIFICAR AS INFORMAÇÕES DE BORDA ACIMA COM UMA SHORTHAND. SEMPRE NA ORDEM ACIMA*/                    
+            border: 10px solid darkgray;
+            /*SEMPRE USE APENAS UMA FORMA, NUNCA USE UMA SHORTHAND E A FORMA NORMAL AO MESMO TEMPO*/
+
+            padding-top: 10px; /*preenchimento encima */
+            padding-right: 10px; /*preenchimento na direita*/
+            padding-bottom: 10px; /*preenchimento embaixo*/
+            padding-left: 10px; /*preenchimento na esquerda*/
+            /*padding é o espaço entre a borda e o conteudo*/
+
+            /*PODEMOS SIMPLIFICAR AS INFORMAÇÕES DE BORDA ACIMA COM UMA SHORTHAND. SEMPRE NA ORDEM ACIMA*/
+            padding: 10px 10px 10px 10px;
+            /*SE O VALOR DE TODOS OS ATRIBUTOS FOREM IGUAIS, COLOQUE O VALOR APENAS UMA VEZ
+              TAMBEM É POSSIVEL APENAS COLOCAR DOIS VALORES, O PRIMEIRO VALOR SERÁ PARA CIMA E PARA BAIXO E O SEGUNDO VALOR SERÁ PARA DIREITA E PARA ESQUERDA*/
+            /*SEMPRE USE APENAS UMA FORMA, NUNCA USE UMA SHORTHAND E A FORMA NORMAL AO MESMO TEMPO*/
+
+            outline-width: 5px; /*largura do autline*/
+            outline-style: dashed; /*estilo do outline*/
+            outline-color: black; /*cor do outline*/
+            /*outline é um elemento dentro da margem*/
+
+            /*PODEMOS SIMPLIFICAR AS INFORMAÇÕES DE BORDA ACIMA COM UMA SHORTHAND. SEMPRE NA ORDEM ACIMA*/
+             outline: 5px dashed black;
+            /*SEMPRE USE APENAS UMA FORMA, NUNCA USE UMA SHORTHAND E A FORMA NORMAL AO MESMO TEMPO*/
+
+   
+            margin-top: 10px;/*margem encima*/
+            margin-right: 10px;/*margem ma direita*/
+            margin-bottom: 10px;/*margem embaixo*/
+            margin-left: 10px;/*margem na esquerda*/
+            /*margem do elemento é o espaçamento externo do elemento superior a borda  e ao outline*/
+
+            /*PODEMOS SIMPLIFICAR AS INFORMAÇÕES DE BORDA ACIMA COM UMA SHORTHAND. SEMPRE NA ORDEM ACIMA*/
+            /*se quiser uma centralização automatica da margem da direita e da esquerda, na shorthand no lugar desses valores coloque AUTO*/
+            margin: 10px auto 10px auto;
+            /*SEMPRE USE APENAS UMA FORMA, NUNCA USE UMA SHORTHAND E A FORMA NORMAL AO MESMO TEMPO*/
+
+            /*PARA CENTRALIAZR AUTOMATICAMENTE UMA CAIXA USE "MARGIN: AUTO". COMO MOSTRADO ABAIXO*/
+            margin: auto;
+            /*SE HOUVER OUTRAS CONFIGURAÇÕES DE MARGEM, ESSA IRA SOBREPO-LAS*/
+
+
+            /*AS SHORTHAND'S PODEM SER IMPLEMENTADAS EM QUALQUER ELEMENTO. INCLUSIVE NO SELETOR "a" ABAIXO */
+            
+        }
+
+        a{ /*é possivel mudar um iline level para box level com a "DISPLAY: BLOCK"*/
+            border-width: 5px;
+            border-color: lightgray;
+            border-style: solid;
+
+            margin-top: 10px;/*margem encima*/
+            margin-right: 10px;/*margem ma direita*/
+            margin-bottom: 10px;/*margem embaixo*/
+            margin-left: 10px;/*margem na esquerda*/
+            /*margem do elemento é o espaçamento externo do elemento superior a borda*/
+
+            padding-top: 10px; /*preenchimento encima */
+            padding-right: 10px; /*preenchimento na direita*/
+            padding-bottom: 10px; /*preenchimento embaixo*/
+            padding-left: 10px; /*preenchimento na esquerda*/
+            /*padding é o espaço entre a borda e o conteudo*/
+        }
+    </style>
+
+
+</head>
+<body>
+      <h1>Exemplo de caixa box-level</h1>
+      <!--todas as tags de titulos são exemplos de caixas box-level
+       caixas box-level's são caixas que por padrão preenchem a linha inteira do navegador, da tela
+    -->
+
+      <p>Paragrafos tambem são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>, veremos como isso funciona</p>
+      <!-- caixas inline-level's são caixas que por padrão não preenchem a linha inteira do navegador, da tela-->
+</body>
+</html>

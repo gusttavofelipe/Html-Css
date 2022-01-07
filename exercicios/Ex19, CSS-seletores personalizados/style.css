@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/*em HTML "id", em CSS = "#" 
+  em HTML "class", Em CSS = "."
+  no CSS não é preciso colocar o nome da tag se a mesma pussir um id ou class, use apenas o nome do id ou class (opcional)
+  só se pode usar um nome por id
+  quando se quer configurar mais de um elemento, tags igualmente no CSS usa-se "class"
+  é possivel atribuir a um elemento uma classe e um id, tendo em vista que o id pode sobrepor a classe se usado o mesmo atributo
+
+*/
+
+
+
+body{
+    background-color: rgb(189, 189, 190);
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+
+
+#principal {
+    text-align: center;
+    background-color: black;
+    color: rgb(76, 129, 15) ;
+   
+}
+
+h2{
+    color: rgb(80, 129, 106);
+}
+
+
+.subtitulo1{
+    color: rgb(76, 129, 15);
+    font-weight: bold;
+
+}
+
+.subtitulo2{
+    color: rgb(21, 128, 30);
+    font-weight: bold;
+}
+
+.subtitulo3{
+    color: rgb(52, 167, 42);
+    font-weight: bold;
+
+}
+
+.destaque{
+    background-color: black;
+}

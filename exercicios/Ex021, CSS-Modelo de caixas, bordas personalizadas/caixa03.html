@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            border: 5px solid transparent;
+            padding: 10px;
+            border-image-source: url('borda.png');
+            /*border-image-source adiciona sua borda criada ou local*/
+            border-image-slice: 6;
+            /*border-image-slice especifica como fatiar a imagem especificada por border-image-source. A imagem é sempre dividida em nove seções: quatro cantos, quatro bordas e o meio*/
+            border-image-repeat: repeat;
+            /*border-image-repeat especifica se a imagem da borda deve ser repetida, arredondada, espaçada ou esticada*/
+
+            /*PODEMOS TAMBEM SIMPLIFICAR O border-image-source, O  border-image-slice e O  border-image-repeat COM UMA SHORTHAND QUE SEGUE ESSA MESMA ORDEM:
+            border-image-source
+            border-image-slice
+            border-image-repeat
+
+            APÓS ADICIONAR AS ESPECIFICAÇÕES DE BORDER IMAGE, NÃO APAGUE O ATRIBUTO "BORDER:" ADICIONADO PRIMEIRO, POIS TODO O RESTO IRA DESAPARECER
+             */
+        }
+    </style>
+</head>
+<body>
+    <h1>Bordas decoradas</h1>
+    
+</body>
+</html>

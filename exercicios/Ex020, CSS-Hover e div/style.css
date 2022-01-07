@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+div{
+    background-color: orange;
+    display: inline-block ;
+    text-align: center;
+    height: 200px; /*altura*/
+    width: 200px; /*largura*/
+    border: 1px solid black; /*shorthand para borda*/
+}
+
+div:hover{
+    background-color: gold;
+    
+
+ /*adicionando dois pontos (:) depois de um seletor, você cria uma pseudoclasse (obviamente ja existente)
+    Uma pseudo-classe é uma palavra-chave adicionada a seletores que especifica um estado especial do elemento selecionado.
+
+    O ATRIBUTO "BACKGROUND-COLOR" USADO NA PSEUDO-CLASSE "HOVER" FAZ COM QUE O "BACKGROUND" DO ELEMENTO MUDE PARA A COR SELECIONADA ASSIM QUE O CURSOR DO MOUSE É PASSADO ENCIMA DO ELEMENTO
+ */  
+}

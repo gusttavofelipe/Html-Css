@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/*@charset "UTF-8"; é uma regra utilizada para poder inserir caracteres especiais sem problemas e tambem colocar algumas declarações "normais", como "font-family: Arial, Helvetica, sans-serif; abaixo" */
+
+*{ font-family: Arial, Helvetica, sans-serif;}
+   
+
+p{text-align: justify;}
+
+body{ background-image:linear-gradient(to bottom right,rgb(190, 236, 91), rgb(255, 255, 255)); }
+
+main{ background-color: white ;
+      width: 500px ; /*largura*/
+
+      padding: 90px; /*define uma a distância entre o conteúdo de um elemento e suas bordas. É um atalho que define uma distância para cada lado separadamente ( padding-top , padding-right , padding-bottom , padding-left*/
+    
+      margin: auto; /*A propriedade margin, simplesmente adiciona uma margem ao seu elemento. Você pode utilizar qualquer medida (px, pt, em, %...) como tamanho da propriedade margin, além disso você pode atribuir valores negativos.*/  
+
+      border-radius: 10px; /*border-radius define bordas arredondadas. */
+
+      box-shadow: 10px 10px 10px rgba(39, 92, 20, 0.342) ;
+      /*Cria sombra em tudo em que esta dentro da tag selecionada (nesse caso, a tag "MAIN").
+      priemiro numero é o quanto a sombra vai andar pro lado,
+      o segundo é o quanto a sombra vai andar pra baixo
+      e o terceiro é  o quanto a sombra vai espalhar 
+      (e a cor, obviamente) */
+      /*NÃO É USADO VIRGULA PARA SEPARAR OS VALORES*/
+   } 
+
+       h1{color: rgb(39, 92, 20);
+         text-align: center;
+         text-shadow: 1px 1px 2px rgba(16, 39, 8, 0.904);} /*cria sombra no texto*/
+
+       h2{color:rgba(35, 109, 16, 0.904);}
+
+      

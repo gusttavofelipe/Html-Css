@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de responsividade</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px; /*largura maxima*/
+            min-width: 271px; /*largura minima*/
+
+            margin: auto;/*faz com que a margem fique sempre centralizada*/
+        }
+
+        img{
+            width: 100%;
+            /*whidth (nesse caso) define o quanto de espaço a imagem irá preecher do espaço em que está.*/
+        }
+
+        
+    </style>
+</head>
+<body>
+    <main>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos labore, laudantium eos, magnam optio esse eius blanditiis ipsum, facere doloremque amet atque. Velit tenetur consectetur distinctio? Placeat voluptas blanditiis debitis.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, et! Aliquid repellat incidunt aliquam quia soluta animi dolores omnis officiis quasi mollitia, debitis culpa explicabo velit nobis molestiae iste at! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam culpa voluptatem temporibus sed illum. Eum labore maxime illo architecto assumenda officiis, repellendus, mollitia necessitatibus sit recusandae incidunt. Beatae, consectetur eveniet?
+        </p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg" type="image/jpg">
+            <!--o parametro "MAX-WIDTH" define a partir de qual ponto a proxima imagem será exibida. nesse caso, apartir de 600px-->
+            <img src="imagens/irina-blok.jpg" alt="">
+        </picture>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos labore, laudantium eos, magnam optio esse eius blanditiis ipsum, facere doloremque amet atque. Velit tenetur consectetur distinctio? Placeat voluptas blanditiis debitis.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, et! Aliquid repellat incidunt aliquam quia soluta animi dolores omnis officiis quasi mollitia, debitis culpa explicabo velit nobis molestiae iste at! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam culpa voluptatem temporibus sed illum. Eum labore maxime illo architecto assumenda officiis, repellendus, mollitia necessitatibus sit recusandae incidunt. Beatae, consectetur eveniet?
+        </p>
+
+    </main>
+    
+</body>
+</html>

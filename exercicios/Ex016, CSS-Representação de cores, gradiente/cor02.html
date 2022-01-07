@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+           *{ 
+               height: 100%;
+            }
+               /* um seletor com asterisco (*) indica configurações globais das CSS's, nesse caso (altura definida de 100%*/
+              
+           
+           body{
+               background-image:linear-gradient(to top left,black 5%, gray 50% , white) ;
+
+               background-attachment: fixed;
+               /*"BACKGROUND-ATTACHMENT" deixa o fundo fixo*/
+           }
+/*Para se cololcar um fundo gradiente use a declaração "BACKGROUND-IMAGE" na tag body (no css) e adicione o valor "LINEAR-GRADIENT"*/
+/*No "LINEAR-GRADIENT" deve se indicar primeiro a direção, colocar virgula e depois a cor, como ostrado na CSS acima*/
+/*depois da cor pode-se collocar a porcentagem do quanto voce quer que aquela cor ocupe na tela*/
+/*pode-se colocar quantas cores quiser para fazer o gradiente*/
+/*algumas possiveis configuracoes de direção, são: 
+
+to right → transição de cores na horizontal da esquerda para a direita;
+to left → transição de cores na horizontal da direita para a esquerda;
+to top → transição de cores na vertical de baixo para cima;
+to bottom → transição de cores na vertical de cima para baixo;
+to top left → transição de cores a partir do canto superior esquerdo em direção ao centro;
+to top right → transição de cores a partir do canto superior direito em direção ao centro;
+to bottom left → transição de cores a partir do canto inferior esquerdo em direção ao centro;
+to bottom right → transição de cores a partir do canto inferior direito em direção ao centro.*/    
+
+/*Tambem é possivel usar deg (graus) em numeral para escolher a direção*/
+
+
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+    
+    
+</body>
+</html>

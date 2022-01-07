@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decimo oitavo exercicio: fontes externas baixadas</title>
+    
+    <style>
+           @font-face{
+               font-family: 'Danger' ;
+               src: url('fontes/Another Danger - Demo.otf') format('opentype'); 
+               font-weight: normal;
+               font-style: normal;
+            }            
+                    
+                    
+
+            /*@font-face especifica uma fonte customizada com a qual exibe o texto; a fonte pode ser carregada de um servidor remoto ou de uma fonte instalada localmente no computador do usuário
+            
+            VOCE PODE DAR O NOME QUE QUISER PARA O FONT-FAMYLE. SERA DEFINIDA COMO PADRDÃO (COLOQUE O NOME ENTRE ASPAS)*/
+
+          /*depois de criado o font-face, adicione mais a propriedade "FORMAT" (entre o (;) obviamente, pois faz parte da mesma declaração) */
+
+            /* na "URL" se coloca o nome do arquivo exatamente da mesma forma que esta localizada no gerenciador de arquivos entre aspas*/
+
+            /*EM FORMAT SE COLOCA O FORMATO DO ARQUIVO (entre aspas)*/
+            /*PODE SER COLOCADO DIVERSAS URL'S, NO CASO DO NAVEGADOR NÃO RECOMHECER UM FORMATO DE UMA URL, ELE TENTARÁ OS OUTROS*/
+            /*TIPOS DE FORMAT
+
+            opentype (geralmente otf)
+            truetype (geralmente ttf)
+            embedded-opentype
+            truetype-aat
+            sgv
+
+            Pode-se tambem colocar o "FONY-WEIGHT" e "FONT-STYLE" 
+
+            SE A FONTE ESTIVER EM UMA PASTA, ESCREVA O CAMINHO NA URL.EX: fontes/nome da url
+            
+            TODAS AS CONFIGURAÇÕES INSERIDAS NO @FONT-FACE SERÃO DEFINIDAS COMO O PADRÃO DA FONTE
+            
+            */
+
+            
+
+           body{
+            font-family: Arial, Helvetica, sans-serif;
+           }
+           h1{
+               font-family: 'Danger' ;
+               font-size: 3em;
+               font-weight: normal;
+               font-style: normal;
+           }
+    
+    </style>
+
+</head>
+<body>
+    <h1>TItulo</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio nostrum dignissimos aut dolor <br>
+       voluptatem quisquam earum soluta, mollitia et tempora, porro nesciunt <br>
+       voluptatibus minima illo saepe similique ab, eligendi laudantium.
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio nostrum dignissimos aut dolor <br>
+       voluptatem quisquam earum soluta, mollitia et tempora, porro nesciunt <br>
+       voluptatibus minima illo saepe similique ab, eligendi laudantium.
+
+        <p><a href="./fonte01.html" target="_self" rel="prev">Voltar</a></p>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS, shorthand font, peso</title>
+
+    <style>
+
+        body{
+            font-family:Arial, Helvetica, sans-serif ;
+            font-size: 16px;
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: underline;
+            }
+
+            p{  
+             font:italic normal 16px Arial, Helvetica, sans-serif ;
+            }
+
+            h2{      
+                     
+              font: normal bold 2em sans-serif;
+            }
+
+
+
+        /*as fontes devem ser colocadas sempre em safe fonts combinations, que são basicamente combinações de fontes que se parecem*/
+        /*quando for usar uma fonte com dois nomes, cololque aspas simples (apenas nessa fonte)*/
+
+        /*O PARAMETRO "FONT SIZE" DEFINE O TAMANHO DA FONTE*/
+        /*16px é comumente o tamanho de fonte padrão dos navegadores mesmo que não seja especificado no font-size*/
+        /*16px geralmente = 1em. em é o tamanho da letra normalmente, se o tamanho da letra é 16px é = 1em, se for 17,18,20 ou qualquer outro tamanho, essa medida sera igualmente = 1em*/
+        /*o em é a medida relativa ao tamnho natural da fonte*/
+
+        /*medidas absolutas:
+        cm (centimetro),
+        mm (milimetro),
+        in (polegada),
+        pt (ponto),
+        pc (paica)
+       */
+
+       /*medidas relativas:
+        em (medida relativa ao tamanho atual da fonte),
+        ex (medida relativa a altura x da fonte),
+        rem (relativa a fonte que esta configurada no body),
+        vw (largura da wiew port (largura da tela do dispositivo)),
+        vh (altura da view port (altura da tela do dispositivo)),
+        porcentagem (%)*/ 
+
+        /*para medidas de fontes é mais aconselhavel usar  px e em*/
+
+       
+       /*O PARAMETRO "FONT-WEIGHT" DEFINE O PESO DA FONTE */
+       /*Pesos literais:
+        lighter (o mais fino),
+        normal (nome autoindicativo),
+        bold ()
+        bolder ()  
+        */
+
+        /*Peso numerico:
+        o peso numerico é usado de 100 a 900 sempre pulando de centena pra centena*/          
+
+        /*a maioria das fontes não suporta todos os tipos de peso*/
+
+        /*O PARAMETRO "FONT-STYLE" DEFINE O ESTILO DA FONTE (NÃO SEMANTICAMENTE)*/
+        /*a maioria das fontes não suporta todos os tipos de estilo*/
+
+        /*O PARAMETRO "TEXT-DECOARTION" "DECORA" O TEXTO. PODENDO DEIXAR A FONT SUBLINHADA (NÃO SEMANTICAMENTE) (SEM MAIS ESPECIFICAÇÕES DO PATRAMETRO)*/
+        /*a maioria das fontes não suporta todos os tipos de "decoração"*/
+
+        /*As formatações de fontes são tão importantes e tão usadas em CSS, que existem
+        “atalhos” para usá-las. São as chamadas "shorthands".*/
+
+        /*Existe uma shorthand para fontes que é a propriedade font. No lugar de fazer várias
+        configurações em múltiplas linhas, podemos simplificar tudo de maneira muito
+        simples*/
+
+        /*no caso da shorthand font, voce pode tambem criar propriedades shorthands menores, deixando de inserir valores de algumas declarações, o importante é sempre seguir a ordem. veja o exemplo na tag H2 no CSS*/
+
+        /*não existe shorthand pra tudo*/
+
+        /*A SHORTHAND "FONT" ABREVIA AS DECLARAÇÕES ABAIXO EM UMA SÓ:
+        font-style
+        font-weight
+        font-size/line-height
+        font-family */
+
+        /*Para que seja possivel usar essa shorthand é necessario colocar as os valores sempre na ordem apresentada acima. Veja no exemplo da tag P no CSS*/
+
+
+        
+        
+        
+
+
+
+        
+
+       
+
+
+    
+
+    </style>
+
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam corporis nobis itaque aut quo optio culpa voluptate ipsa similique rerum eum, quisquam, corrupti voluptas neque accusamus accusantium quaerat nesciunt. Natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sequi corporis quibusdam iusto aspernatur enim eius, vero ipsa error, dolores eveniet accusamus quisquam molestias beatae mollitia eligendi consequuntur sint unde?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, quisquam, deleniti perspiciatis minus facere non architecto voluptate magnam repellat porro ut, aliquam iusto? Quia facilis quas dolorum itaque eius quis.</p>
+    
+    <h2>Subtitulo do exercicio</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi autem quas recusandae, officiis, dolor corporis vero commodi illo tempora iste velit dicta voluptatem! Aliquid quis sequi, velit quasi asperiores molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque reprehenderit culpa praesentium eaque suscipit. Nulla quasi, quia obcaecati provident quod iure quaerat ullam expedita neque aperiam delectus facilis maiores nihil? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro veniam magnam dolore cum veritatis culpa laboriosam vero optio cupiditate, accusamus iusto repellat quos similique? Quo, deserunt animi. Iure, id accusamus.</p>
+
+    <p><a href="fonte02.html" target="_self" rel="next">Próximo</a></p>
+</body>
+</html>

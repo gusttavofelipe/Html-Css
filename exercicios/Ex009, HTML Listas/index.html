@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>Nono exercicio: listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+     <h2>Listas ordenadas</h2>
+     <!--listas ordenadas são aquelas em que a ordem dos itens importam-->
+
+
+     <ol type="1" start="1">
+         <!--usando o parametro "TYPE="" " é possivel mudar o tipo de ordenação
+             usando o paramtro "START="" " é possivel escolher a partir de que numeração ou letra a lista vai começar-->
+
+
+         <li>Acordar</li>
+         <li>tomar café</li>
+         <li>escovar os dentes</li>
+
+
+     </ol>
+     <!-- a tag "OL" cria listas ordenadas que ficam entre, dentro das tags "OL" e "/OL" que são as tags "LI"
+          as tags "LI" são as tags que vão apresentar os intens da lista na pagina
+          a numeração é feita automaticamente
+          a tag de fechamento "/LI" é opcional-->
+
+          <h2>Listas não ordenadas</h2>
+          <!--listas não ordenadas são aquelas em que a ordem dos itens não interfere em nada-->
+
+          <ul type="">
+              <!--utilizando o parametro "TYPE="" " é possivel mudar o tipo de ordenação 
+                as opções possiveis são DISC, CIRCLE, SQUARE -->
+
+              <li >aroz</li>
+              <li >feijão</li>
+              <li >salada</li>
+              <li >macarrão</li>
+         </ul>
+          <!-- a tag "UL" cria listas não ordenadas que ficam entre, dentro das tags "UL" e "/UL" que são as tags "LI"
+          as tags "LI" são as tags que vão apresentar os intens da lista na pagina
+          nesse tipo de lista não é feita ordenação, numeração
+          a tag de fechamento "/LI" é opcional-->
+
+          <h2>Juntando listas 1.0</h2>
+          <!--é possivel insereir listas dentro de listas (não importando de que tipo sejam) e mudar seus parametros como no caso abaixo usando apenas listas ordenadas-->
+
+          <h3>Filmes</h3>
+
+          <ol>
+              <li>Antigos</li>
+               <ol type="a">
+                   <li>Wachtmem</li>
+                   <li>As aventuras de Pi</li>
+                   <li>O clube da luta</li>
+               </ol>
+              <li>Novos</li>
+              <ol type="1">
+                  <li>Liga da Justiça (SnayderCut)</li>
+                  <li>O poço</li>
+                  <li>O Resgate</li>
+              </ol>
+         </ol>
+
+          <h3> Filmes por Universos Cinematograficos</h3>
+          <ol>
+              <li>DC</li>
+                 <ul type="square">
+                    <li>Aquamam</li>
+                    <li>FlashPoint</li>
+                    <li>Batmam vs Supermam</li>
+                 </ul>
+              <li>Marvel</li>
+                <ul type="square">
+                    <li>Guardiões da Galaxia</li>
+                    <li>Vingadores: Guerra infinita</li>
+                    <li>Shang-Shi</li>
+                </ul>
+          </ol>
+          <!--é possivel insereir listas dentro de listas (não impotando de que tipo sejam) e mudar seus parametros como no caso acima usando listas ordenadas e não ordenads-->
+
+          <h2>Lista de definição</h2>
+          <!--listas de definição são listas de definições de termos
+            não possui demarcação-->
+          <dt>HTML</dt>
+          <!--entre a tag "DT" e "/DT" é colocado o termo-->
+          <dd>Linguagem de Marcação de Texto</dd>
+          <!--entre as tags "DD" e "/DD" é colocado a definição do termo-->
+
+
+
+          
+
+    
+</body>
+</html>

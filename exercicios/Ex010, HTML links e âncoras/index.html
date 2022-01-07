@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>Décimo Exercicio: links e âncoras</title>
+</head>
+<body>
+    <h1>Links e âncoras</h1>
+    <h2>Usando links externos</h2>
+    <!--um link externo é um link que vai apontar para outro site que não é seu-->
+    <p>Acesse o git hub do <a href="https://github.com/gustavoguanabara/html-css/commits?author=gustavoguanabara">curso em video</a></p>
+    <!--a tag "A" é usada para criar uma âncora para um linlk;
+        o parametro "HREF" cria uma referencia hipertexto, uma referencia para um link, dentro do "HREF" vai o link  -->
+
+    <p>acesse tambem o <a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ">canal no youtube</a></p>
+    <!--os links externos sobrepõem o seu link, para que seja possivel voltar para seu link, use o parametro "TARGET="_BLANK" dentro da ancora, ele fará com que o link seja aberto em uma nova janela
+    existem outros atributos para "TARGET" e "REL" e outros parametros para "HREF"
+    use tambem o parametro "REL="EXTERNAL"" (o parametro "REL" especifica o tipo do link) que vai especificar que o link é externo. Veja no exemplona seguir-->
+    
+    <p>acesse meu <a href="https://instagram.com/gusfelip_?utm_medium=copy_link" target="_blank" rel="external">instagram</a></p>
+    
+
+    <h2>Usando links internos</h2>
+    <!--Links internos são aqueles que apontam para outra página do mesmo site, e para que seja possivel usar links internos é necessario haver outras paginas-->
+    <p>Esta é a primeira pagina do site, se quiser acesse a <a href="Décimo exercicio, pagina2.html" target="_self" rel="next">segunda pagina</a></p>
+    <!--quando se usa links internos não é necessario utilizar a URL completa. (Ctrl+Espaço exibe as paginas internas)
+    as duas paginas devem estar dentro da mesma pasta primaria no computador
+    o "REL" utilizado em links internos para ir para outra pagina é "NEXT" não existe "REL" interno"
+    Existe um parametro especifico do "TARGET" para indicar navegação de paginas de um mesmo site "_SELF"-->
+
+    <p>Você tambem pode acessar nossa <a href="Notícias/Décimo exercicio, pagina3.html" target="_self" rel="next">terceira pagina</a></p>
+    <!--para usar navegação de paginas que estão dentro de uma pasta dentro da pagina primaria, primeiro, usando "Ctrl+Espaço" selecione a pasta em que o arquivo está, depois o arquivo em si-->
+
+    <h2>Links para downloads</h2>
+    <ul>
+       <li><a href="Pasta pra usar download/As Seis Licoes - Ludwig Von Mises.zip" download="As Seis Licoes - Ludwig Von Mises.zip" type="application/zip">Baixar livro zipado</a></li>
+        <!-- para fazer um link de download basta, depois de adicionar o link do arquivo, adicionar o atributo "DOWNLOAD" com o valor configurado com o nome do arquivo a ser baixado e o atributo "TYPE" para indicar ao navegador o tipo de arquivo que está sendo baixado, de acordo com o exemplo acima-->
+
+        <li><a href="Pasta pra usar download/As Seis Licoes - Ludwig Von Mises.pdf" download="As Seis Licoes - Ludwig Von Mises.pdf" type="application/pdf" >Baixar livro em PDF</a></li>
+        <!--no caso do documento em PDF, click sob o link com o botão direito, no menu de opções seleione "salvar link como.." ou algo do tipo
+        SEM MUITAS EXPLICAÇÕES SOBRE ESSA ´PARTE-->
+    </ul>
+    
+
+
+
+    
+</body>
+</html>

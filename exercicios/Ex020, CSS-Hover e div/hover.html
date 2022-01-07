@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo de houver</title>
+    <style>
+          body{
+              font-family: Arial, Helvetica, sans-serif;
+          }
+     
+          div:hover{
+              color: red;
+
+            /* O ATRIBUTO "COLOR" USADO NA PSEUDO-CLASSE "HOVER" FAZ COM QUE O ELEMENTO MUDE PARA A COR SELECIONADA ASSIM QUE O CURSOR DO MOUSE É PASSADO ENCIMA DO ELEMENTO (NESSE CASO, A LETRA DENTRO DO PAGRAFO)*/
+          } 
+
+          div > p{
+
+            display: none; 
+            
+            /*DISPLAY: NONE Desabilita a exibição do elemento (sem afetar o layout); todos os elementos filhos também tem sua exibição desabilitada. O documento é renderizado como se o elemento não existisse.*/
+            
+             /* toda vez que usamos ">" em um seletor indicamos "filhos", elementos que estão dentro de outros elementos. Ex: a tag "P" dentro da tag "DIV"
+              quando utilizado significa que a CSS sera aplicada apenas nessa classe de elementos, tags
+              */
+          }
+
+          div:hover > p{
+            display: block;
+            color: red;
+            background-color: black;
+            width: 185px; /*largura do paragrafo */
+
+            
+            /*DISPLAY: BLOCK habilita a exibição do elemento
+            a DIV com DISPLAY: NONE teve que vir primeiro para para desabilitar a exibição do elemento, e depois a div com DISPLAY: BLOCK para habilitar a exibição, a ordem importa
+            
+            */
+          }
+
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de houver</h1>
+
+
+        <p>Passe o cursor do mouse sobre o texto abaixo</p>
+    <div>
+
+        Passe o mouse aqui
+        <!--nesse caso não faz diferença a tag  p-->
+
+        <p>&gt TEXTO ESCONDIDO &lt</p>
+    </div>
+        <p>Fim do exemplo</p>
+    
+</body>
+</html>

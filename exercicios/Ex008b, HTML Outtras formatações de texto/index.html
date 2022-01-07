@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>Oitavao(b) exercicio: outras formatações</title>
+</head>
+<body>
+    <h1>Outras fotmatações</h1>
+    <h2>Código fonte/ Pré formatação</h2>
+    <p>O comando <code>document.gEtelementById('teste')</code> é escrito em linguagem JavaScript</p>
+    <!--a tag "CODE"apresenta seu conteúdo estilizado de maneira a indicar que o texto é um código. Por padrão, o conteúdo é exibido utilizando a fonte monoespaçada-->
+
+    <pre><code>
+    name=input("What's your name? ")
+
+    print("Hello, ", name)
+
+    print("\n Press ctrl+R to run again")
+    </code></pre>
+    
+<!--a tag "CODE" não leva em conta o espaçamento do começo da linha ou paragrafos e quebra de limhas. 
+    Para isso usamos a tag "PRE" envelopando a tag "CODE", que leva em conta tudo e exibe tudo que o que esta dentro dela como é escrito no no editor de texto, como mostrado acima.
+    Caso você queira tirar os espaços selecione todo o texto (apenas o texto) e aperte Shift+tab para move-lo para tras e apenas Shift para criar mais espaço e move-lo para frente-->
+
+    <h2>Citações simples</h2>
+    <p>como diria o pai de um amigo: <q>o computador é um burro muito rapido</q></p>
+    <!--a tag "Q" adiciona aspas indicando uma sitação. Essa tag é usada apenas quando necessario citar algo, poque é uma tag semântica.
+        no caso de você quer usar aspas apenas para que o leitor preste atenção naquilo, por exemplo, use aspas normais-->
+
+     <h2>Sitações completas/ Sitacções em bloco</h2>
+     <p>segundo Herman Hans Hope no seu livro Ideias Radicais</p>   
+     <blockquote cite="https://ideiasradicais.com.br/frases-hoppe/">Se o poder do governo reside na aceitação generalizada de ideias falsas, absurdas e tolas, então a única proteção genuína é o ataque sistemático dessas ideias e a propagação e proliferação de ideias verdadeiras.</blockquote>
+     <!-- a tag "BLOCKQUOTE" indica que o texto incluído é uma longa citação. quando a tag é usada, o texto é deslocado para a direita  ... A URL para a fonte da citação pode ser dada usando o atributo "cite"
+     O uso da URL tem como principal intuito, manter os direitos da frase para o autor-->
+
+     <h2>Abreviações</h2>
+     <p>Estou estudando <abbr title=" HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou gostando</p>
+    <!--a tag "ABBR" com o atributo "TITLE" é utilizada quanado se usa abreviações, quando se coloca caracteres, palavras etc dentro do "TILTE", na pagina, ao passar o cursor encima da sigla é mostrada uma mensagem pop-pup mostrando o que foi colocado no "TITLE" -->
+
+    <h2> Direção do texto</h2>
+    <p><bdo dir="rtl">Estou estudando HTML</bdo></p>
+    <p><bdo dir="ltr">Estou estudando HTML</bdo></p>
+    <!-- a tag "BDO" com o atributo "LTR"= ESQUERDA PRA DIREITA faz com que o texto apresentado apareça da esquerda pra direita
+         a tag "BDO" com o atributo "RTL"=  DIREITA PRA ESQUERDA faz com que o texto apresentado apareça da direita para a esquerda
+         direita-->
+
+
+
+</body>
+</html>
