@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+
+body{/*para carregar uma imagem para o fundo é usado:  background-image: url('')
+    e é´colocado o caminho da imagem entre aspas
+    se a imagem for menor que o fundo, sera "repetida" até preencher todo o espaço*/
+    background-image: url('imagens/wallpaper001.jpg');
+}
+
+.quadrado{
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+
+#q1{
+    background-color: darkolivegreen;
+
+}
+
+#q2{
+    background-image: linear-gradient(to bottom, green, black);
+}
+
+#q3{/*para carregar uma imagem para o fundo é usado:  background-image: url('')
+    e é´colocado o caminho da imagem entre aspas
+    se a imagem for menor que o fundo, sera "repetida" até preencher todo o espaço*/
+    background-image: url('imagens/pattern001.png');
+}
