@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vigesimo segundo exercicio: centralização vertical de caixas</title>
+    <style>
+        #conteiner{
+            position: relative; 
+            /* "position: relative" define o elemento que vai ser usado como referencia, que vai fazer relação ao outro elemento
+            por padrão, os elementos são relativos ao navegador (chamamos ese comportamento de estatico), a tela do navegador
+            o conteiner semore tem que ter posicionamento relativo
+            o position padrão dos elementos é "static" */
+            background-image: url('imagens/target001.png');       
+            height: 96vh;         
+            background-color: yellow;   
+            background-size: 100% 100%;
+        }
+
+        #conteudo{
+            background-image: url('imagens/target001.png');     
+            background-size: 100% 100%;  
+
+            position: absolute;
+            /*position: absolute possibilita posicionar qualquer elemento de acordo com o elemento pai que tenha um position diferente de static (no nosso caso: relative)
+            Position Absolute Ppossibilita a adiçaão de "left e top" (que tem suas especificações abaixo) e utiliza do ponto superior esquerdo como ponto de referencia para as configurações
+            o conteudo sempre tem que ter posicionamento absoluto
+            o position padrão dos elementos é "static" */
+
+            height: 200px;
+            width: 400px;
+            background-color: green;
+
+            left: 50%;/*define a distancia do lado esquerdo desde a borda até o conteudo
+            podem ser usado pixels, percentagem etc etc*/
+            
+            top: 50%;/*define a distancia vertical do topo desde a borda até o conteudo
+            podem ser usado pixels, percentagem etc etc */
+
+            transform: translate(-50%, -50%); /*nesse caso " transform: translate", serviu para mexer nas posições adicionadas acima */
+        }
+    </style>
+</head>
+<body>
+    <section id="conteiner">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    
+</body>
+</html>
