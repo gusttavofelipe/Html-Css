@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vigesimo terceiro exercicio: mesclagens de celulas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 300px;
+        }
+
+        td{
+            border: 0.5px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de celulas</h1>
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
+            <!--para fazer com que uma celula ocupe duas ou + colunas utili-ze "colspan="2"",
+                onde "2" inidca a quantidade de colunas que a celulas deve ocupar -->          
+        </tr> 
+                 
+        <tr>
+            <td rowspan="3">D</td>
+             <!--para fazer com que uma celula ocupe duas ou + linhas utili-ze "rowspan="3"",
+                onde "3" inidca a quantidade de linhas que a celula deve ocupar -->
+            <td>E</td>
+            <td>F</td>
+
+        </tr>
+            
+        <tr>
+  
+            <td colspan="2">H</td>
+        </tr>
+
+        <tr>
+            
+            <td>K</td>
+            <td>L</td>
+        </tr>
+
+    </table>
+</body>
+</html>
