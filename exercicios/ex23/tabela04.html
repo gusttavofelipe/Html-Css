@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vigesimo terceiro exercicio: exemplo de tabela completa </title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        td, th{
+            border: 0.5px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de tabelas</h1>
+
+
+<table>
+<caption>Filmes favoritos</caption> 
+
+    <thead>
+    <tr>
+        <th scope="col">Grupos</th>
+        <th scope="col">Nomes</th>
+        <th scope="colgroup" colspan="3">Filmes</th>
+        <!--quando uma célula estiver mesclada em mais de uma, o escopo usado é determinado pelo dado, se os dados 
+            estiverem em mais de uma coluna o scope é de grupo (group) como mostardo acima (colgroup, no caso de colunas) 
+            e/ou "rowgroup" no caso dos dados estarem em mais de uma linha--> 
+    </tr>
+    </thead>
+
+     <tbody>
+        <tr>
+            <th scope="rowgroup" rowspan="3">Mulheres</th>
+            <td>Maria Clara dos Santos</td>
+            <td>Alien</td>
+            <td>Rambo</td>
+            <td>Vingadores</td>
+        </tr>
+        <tr>
+            <td>Dandara Letícia dias Ferreira</td>
+            <td>Hulk</td>
+            <td>Inception</td>
+            <td>Batman</td>
+        </tr>
+        <tr>
+            <td>Angela da Cruz Feitosa</td>
+            <td>Invencível</td>
+            <td>O impossivel</td>
+            <td>Minions</td>
+        </tr>
+        <tr>
+            <th scope="rowgroup" rowspan="3">Homens</th>
+            <td>Gustavo Felipe da costa Silva</td>
+            <td>Watchmen</td>
+            <td>Kick-Ass</td>
+            <td>Injustice</td>
+        </tr>
+        <tr>
+            <td>Rodrigo da Costa vieira</td>
+            <td>O Poço</td>
+            <td>O Resgate</td>
+            <td>Mr.Jones</td>
+        </tr>
+        <tr>
+            <td>Ian Vieira Aguiar</td>
+            <td>Jonah Hex</td>
+            <td>Max Steel</td>
+            <td>Hacker</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th scope="row" colspan="4">Resultado</th>
+            <!--não é porque a célula está mesclada que o escope vai ser de grupo-->
+            <td>Deu isso aí</td>
+        </tr>
+    </tfoot>
+</table>
+
+</body>
+</html>
