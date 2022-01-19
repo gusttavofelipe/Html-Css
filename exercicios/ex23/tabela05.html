@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vigesimo terceiro exercicio: </title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        td,th{
+            border: 0.5px solid black;
+            padding: 10px;
+        }
+
+        .cidade{
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabelas</h1>
+
+    <table>
+        <caption>Cadastro</caption>
+
+        <colgroup>
+            <col class="cnome">
+            <col class="csex">
+            <col class="cidade" span="2">
+            <col class="cprof">           
+        </colgroup>
+        <!--Para configurar colunas inteiras usa-se <colgroup>, dentro da tag coloque outra tag "<col>" 
+            e dentro de <col> adicione a class ou id para essa coluna, as configurações feitas em css valeram para a coluna inteira. as classes, id's e confirações são adicionadas as "cols" seguindo a ordem das colunas;
+        
+            pode ser usado tambem o atributo "span" que quando colocado após a classe e especificado a quantodade da expanção ("span="2"") fará com que as configurações pasem a valer para a coluna em que foi adicionado e para a próxima, vc pode apagar a col da coluna em que o span for usado-->
+
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Edna Freire</td>
+            <td>F</td>
+            <td>16</td>
+            <td>Estudante</td>
+        </tr>
+        <tr>
+            <td>Gustavo Felipe</td>
+            <td>M</td>
+            <td>16</td>
+            <td>Dev iniciante</td>
+        </tr>
+        <tr>
+            <td>Dandara Letícia</td>
+            <td>F</td>
+            <td>16</td>
+            <td>Estudante</td>
+        </tr>
+        <tr>
+            <td>Mariana</td>
+            <td>F</td>
+            <td>20</td>
+            <td>Agronoma</td>
+        </tr>
+        <tr>
+            <td>Maria <em>Eduarda</em></td>
+            <td>F</td>
+            <td>16</td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <td>Maria Clara</td>
+            <td>F</td>
+            <td>15</td>
+            <td>Estudante</td>
+        </tr>
+    </table>
+</body>
+</html>
